@@ -8,7 +8,7 @@ This project is developed as part of the Requirements Engineering module in **M2
 
 | Member | Role | GitHub |
 | :--- | :--- | :--- |
-| **Mathis DUGUE** | **Product Owner & Fullstack Dev**<br>*(President of the 404 Association)* [cite: 7] | [@MathisDugue](https://github.com/MathisDugue) |
+| **Mathis DUGUE** | **Product Owner & Fullstack Dev**<br>*(President of the 404 Association)* | [@MathisDugue](https://github.com/MathisDugue) |
 | **Matthias LABIT** | **Scrum Master & Lead Dev**<br>*(QA & PEGS Implementation)* | [@MatthiasLabit](https://github.com/MatthiasLabit) |
 
 ## 📚 PEGS Approach & Requirements
