@@ -41,7 +41,7 @@ Il couvre les quatre livres : **P**roject, **E**nvironment, **G**oals, **S**yste
 toc::[] 
 
 // ==========================================================
-// LIVRE 1 : GOALS (Objectifs) tests
+// LIVRE 1 : GOALS (Objectifs)
 // "Needs of the target organization"
 // ==========================================================
 
