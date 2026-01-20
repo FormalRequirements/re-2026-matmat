@@ -28,7 +28,3 @@ The Association 404 lacked a centralized digital presence. Students and partners
 1.  **Centralize Information:** A single point of entry for all association news and missions.
 2.  **Showcase Projects:** A "Showcase" section to highlight student work to recruiters.
 3.  **Event Management:** Allow the board to manage events dynamically without coding.
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
