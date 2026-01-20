@@ -14,10 +14,7 @@ This project is developed as part of the Requirements Engineering module in **M2
 ## 📚 PEGS Approach & Requirements
 
 We followed the **PEGS** (Project, Environment, Goals, System) methodology to define and structure the requirements of this application.
-
-The development process is driven by these requirements:
-* **Issues** are linked to specific requirements (e.g., `REQ-F-01`).
-* **Prioritization** follows the **MoSCoW** method (Must, Should, Could, Won't).
+**Prioritization** follows the **MoSCoW** method (Must, Should, Could, Won't).
 
 ## 🚀 Project Overview
 
