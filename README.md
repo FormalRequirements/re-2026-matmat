@@ -22,7 +22,7 @@ The development process is driven by these requirements:
 ## 🚀 Project Overview
 
 ### Context
-The Association 404 lacked a centralized digital presence. Students and partners had difficulty finding information about events or contacting the team[cite: 20].
+The Association 404 lacked a centralized digital presence. Students and partners had difficulty finding information about events or contacting the team.
 
 ### Goals
 1.  **Centralize Information:** A single point of entry for all association news and missions.
