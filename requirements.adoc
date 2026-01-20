@@ -1,0 +1,241 @@
+:title: Spécification des Exigences - Site Web Asso 404
+:project: Asso 404 Website
+:version: 2.0.0 (Release Candidate)
+:author: Matthias LABIT & Mathis DUGUE
+:email: etudiants@univ-tlse2.fr
+:organization: M2 MIASHS ICE-LD - UT2J
+:icons: font
+:toc: macro
+:doctype: book
+:method: pass:[<b>PEGS</b>]
+ifdef::pdf-backend[]
+:method: PEGS
+endif::[]
+
+= {title}
+{author}
+{version} -- {localdate}
+
+//--------------------------- Liens & Définitions
+:hb-url: https://se.inf.ethz.ch/requirements/
+:handbook: link:{hb-url}[Handbook]
+:emptysec: icon:warning[] Non applicable pour ce projet.
+:checked: icon:check-square[]
+:unchecked: icon:square-o[]
+
+[NOTE]
+====
+Ce document respecte strictement la structure PEGS définie dans le *Requirements Handbook*.
+Il couvre les quatre livres : **P**roject, **E**nvironment, **G**oals, **S**ystem.
+====
+
+*HISTORIQUE DES VERSIONS*
+
+[cols="1,1,3",,options="header"]
+|===
+| Version | Date | Commentaire
+| 1.0    | 2025-10-15 | Première ébauche des exigences fonctionnelles
+| 2.0    | 2026-01-20 | Mise en conformité PEGS complète (Ajout Risques & Vérification)
+|=== 
+
+toc::[] 
+
+// ==========================================================
+// LIVRE 1 : GOALS (Objectifs)
+// "Needs of the target organization"
+// ==========================================================
+
+== Goals
+
+[[G1]]
+=== G.1 Contexte et objectifs globaux
+
+[NOTE]
+====
+Pourquoi construisons-nous ce système ?
+====
+
+L'Association 404 (MIASHS - UT2J) souffre d'un déficit de communication numérique. Les informations sont éparpillées sur divers réseaux sociaux, rendant difficile l'accès pour les nouveaux étudiants et les partenaires externes.
+
+**Les objectifs stratégiques sont :**
+* **O1 - Centralisation :** Créer un point de vérité unique pour les informations de l'asso.
+* **O2 - Professionnalisme :** Offrir une vitrine crédible pour les projets étudiants (attirer les entreprises).
+* **O3 - Autonomie :** Rendre le bureau indépendant techniquement pour la gestion courante.
+
+[[G2]]
+=== G.2 Situation actuelle
+
+Actuellement, un étudiant qui cherche la date de la "Soirée d'intégration" doit scroller sur Instagram ou retrouver un message Discord noyé dans le flux. Il n'existe aucun annuaire des projets passés.
+
+[[G3]]
+=== G.3 Bénéfices attendus
+
+* **Gain de temps :** Réduction des questions récurrentes posées aux membres du bureau.
+* **Visibilité accrue :** Augmentation de la participation aux événements grâce à un agenda clair.
+* **Pérennité :** Transmission facilitée des informations d'un mandat à l'autre.
+
+=== G.4 Vue d'ensemble des fonctionnalités
+
+Le système offre deux facettes :
+1.  **Front-Office (Public) :** Consultation des événements, trombinoscope, contact.
+2.  **Back-Office (Privé) :** Administration des contenus (CRUD Événements).
+
+=== G.5 Scénarios d'utilisation de haut niveau
+
+* **Scénario "Nouveau Venu" :** Un étudiant de L1 arrive sur le site, consulte la section "À propos" pour comprendre l'asso, et repère la date de la réunion de rentrée dans "Événements".
+* **Scénario "Recruteur" :** Un professionnel visite l'onglet "Projets", filtre par technologie (ex: Python), et contacte l'association via le formulaire.
+
+=== G.6 Limitations et exclusions
+
+Le système **ne gérera pas** :
+* Les paiements en ligne (cotisations, goodies).
+* La gestion des comptes utilisateurs pour les étudiants (seuls les admins ont un compte).
+
+[[G7]]
+=== G.7 Parties prenantes (Stakeholders)
+
+* **Clients :** Le Bureau 404 (Mathis Dugue).
+* **Utilisateurs :** Étudiants MIASHS, Enseignants, Entreprises.
+* **Développeurs :** Équipe projet M2 ICE-LD.
+
+// ==========================================================
+// LIVRE 2 : ENVIRONMENT (Environnement)
+// "Context in which the system will operate"
+// ==========================================================
+
+== Environment
+
+=== E.1 Glossaire
+
+[[CRUD]]
+CRUD:: Create, Read, Update, Delete. Les 4 opérations de base sur les données.
+[[Firebase]]
+Firebase:: Plateforme Google fournissant le Backend-as-a-Service (Auth, DB).
+
+=== E.2 Composants de l'environnement
+
+Le système interagit avec :
+* **Navigateurs Web :** Chrome, Firefox, Safari (Mobile & Desktop).
+* **Réseaux Sociaux :** Liens sortants vers Instagram/Discord.
+
+[[E3]]
+=== E.3 Contraintes
+
+Selon la classification PEGS :
+
+* **Règles Métier (Business Rules) :**
+    ** `C-01` : Le contenu doit être validé par le bureau avant publication.
+    ** `C-02` : Respect du RGPD pour les données du formulaire de contact.
+
+* **Décisions d'Ingénierie (Engineering Decisions) :**
+    ** `C-03` : Utilisation de **React** et **TypeScript** imposée par les compétences de l'équipe.
+    ** `C-04` : Hébergement sur **Vercel** pour la facilité de CI/CD.
+
+* **Contraintes Physiques (Physical Constraints) :**
+    ** `C-05` : Le système doit fonctionner sur des réseaux mobiles universitaires (parfois lents).
+
+=== E.4 Hypothèses (Assumptions)
+
+* Les administrateurs disposent d'un compte Google pour s'authentifier via Firebase.
+* Vercel et Firebase resteront gratuits pour le volume de trafic estimé (< 10k visites/mois).
+
+// ==========================================================
+// LIVRE 3 : SYSTEM (Système)
+// "Detailed requirements about the system"
+// ==========================================================
+
+== System
+
+[[S1]]
+=== S.1 Composants du système
+
+1.  **Web Client (SPA) :** L'interface utilisateur chargée dans le navigateur.
+2.  **Auth Service :** Gestionnaire de session (Firebase Auth).
+3.  **Data Store :** Base de données NoSQL (Firestore).
+
+[[S2]]
+=== S.2 Fonctionnalités (Functional Requirements)
+
+==== Module Public (Vitrine)
+
+// Requirement Must
+[[REQ-F-01]]
+`S.2.1` **Page d'Accueil**::
+Le système doit afficher une présentation synthétique de l'association 404, incluant le logo et le slogan.
+* _Priorité :_ MUST
+
+[[REQ-F-02]]
+`S.2.2` **Agenda Événementiel**::
+Le système doit lister les événements sous forme de cartes, triés par date (du plus proche au plus lointain).
+* _Priorité :_ MUST
+
+[[REQ-F-03]]
+`S.2.3` **Dark Mode**::
+Le système doit permettre à l'utilisateur de basculer l'affichage entre un mode clair et sombre.
+* _Priorité :_ COULD
+
+==== Module Administration
+
+[[REQ-F-04]]
+`S.2.4` **Authentification Admin**::
+Le système doit restreindre l'accès au Back-Office aux seuls emails whitelistsés.
+* _Priorité :_ MUST
+
+[[REQ-F-05]]
+`S.2.5` **Gestion des Activités**::
+L'administrateur doit pouvoir créer, modifier et supprimer une activité (Titre, Date, Description, Image).
+* _Priorité :_ MUST
+
+=== S.3 Interfaces
+
+* **GUI (Graphical User Interface) :** Interface Responsive Design (Mobile First).
+* **API :** Communication avec Firebase via le SDK Web (méthodes `firestore.get()`, `auth.signIn()`).
+
+=== S.5 Priorisation
+
+La méthode **MoSCoW** a été appliquée à l'ensemble des exigences S.2.
+* **Must :** S.2.1, S.2.2, S.2.4, S.2.5
+* **Should :** Trombinoscope, Projets Étudiants.
+* **Could :** Dark Mode (S.2.3).
+
+[[S6]]
+=== S.6 Vérification et critères d'acceptation
+
+Pour valider le projet, les critères suivants doivent être remplis :
+1.  **Fonctionnel :** Tous les scénarios "MUST" passent sans erreur lors de la démo finale.
+2.  **Performance :** Score Lighthouse > 90/100 sur Desktop.
+3.  **Qualité Code :** Pas d'erreurs de linter (ESLint) et types TypeScript stricts (`noAny`).
+
+// ==========================================================
+// LIVRE 4 : PROJECT (Projet)
+// "How to develop and produce the system"
+// ==========================================================
+
+== Project
+
+=== P.1 Rôles et personnel
+
+* **Mathis DUGUE :** Product Owner & Dev Fullstack.
+* **Matthias LABIT :** Scrum Master & Quality Assurance.
+
+=== P.3 Planning et jalons
+
+* **Jalon 1 (Sept.) :** Validation des maquettes et specs PEGS.
+* **Jalon 2 (Oct.) :** Livraison du MVP (Front-end statique).
+* **Jalon 3 (Déc.) :** Intégration Firebase (Dynamique).
+* **Jalon 4 (Janv.) :** Recette finale et Documentation.
+
+=== P.4 Tâches et livrables
+
+* Code source sur GitHub (Repo: `asso-404-miashs`).
+* Site déployé en production (URL Vercel).
+* Document des Exigences (ce fichier).
+
+[[P6]]
+=== P.6 Analyse des risques et mitigation
+
+[cols="1,2,2", options="header"]
+|===
+| Risque | Impact | Mitigation (Solution)
+| **Perte de connaissances** | Élevé. Le bureau change chaque année, le site devient inmaintenable. | Documentation technique exhaustive et code commenté. Choix de technos standards (React).
+| **Coût imprévu** | Moyen. Dép

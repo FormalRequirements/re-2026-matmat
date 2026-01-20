@@ -1,0 +1,53 @@
+name: Generate PEGS Documentation
+
+# Déclenchement : à chaque push sur la branche main
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - '**/*.adoc' # Ne se lance que si un fichier .adoc est modifié
+  workflow_dispatch: # Permet de lancer manuellement si besoin
+
+# Permissions nécessaires pour publier sur GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Une seule tâche qui gère la concurrence (évite les conflits si tu push 2 fois vite)
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Job de construction (Build)
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Asciidoctor & PDF
+        run: sudo apt-get update && sudo apt-get install -y asciidoctor ruby-full asciidoctor-pdf
+
+      - name: Convert Adoc to HTML & PDF
+        run: |
+          asciidoctor requirements.adoc -o index.html
+          asciidoctor-pdf requirements.adoc -o specifications.pdf
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  # Job de déploiement (Deploy)
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
