@@ -27,8 +27,41 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: 🧪 Test - Check Mandatory PEGS Files
+        run: |
+          files=(
+            "Docs/Project/p3-schedule_and_milestones.adoc"
+            "Docs/Project/p4-tasks_and_deliverables.adoc"
+            "Docs/Goals/g1-context_and_overall_objectives.adoc"
+            "Docs/Goals/g3-expected_benefits.adoc"
+            "Docs/Goals/g7-stakeholders_and_sources.adoc"
+            "Docs/Environment/e3-constraints.adoc"
+            "Docs/System/s1-components.adoc"
+            "Docs/System/s2-functionality.adoc"
+          )
+
+          has_error=0
+
+          echo "🔍 Vérification des fichiers obligatoires..."
+
+          for file in "${files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ ERREUR: Fichier manquant -> $file"
+              has_error=1
+            elif [ ! -s "$file" ]; then
+              echo "❌ ERREUR: Fichier vide -> $file"
+              has_error=1
+            else
+              echo "✅ OK: $file"
+            fi
+          done
+
+          if [ $has_error -eq 1 ]; then
+            echo "⛔ Le test a échoué. Certains fichiers obligatoires sont manquants ou vides."
+            exit 1
+          fi
+
       - name: Install Asciidoctor & PDF
-        # CORRECTION ICI : On utilise 'gem' pour installer le convertisseur PDF
         run: |
           sudo apt-get update
           sudo apt-get install -y ruby-full graphviz
@@ -36,9 +69,8 @@ jobs:
 
       - name: Convert Adoc to HTML & PDF
         run: |
-          # --failure-level WARN : La CI plante si un fichier include est manquant ou si la syntaxe est mauvaise
-          asciidoctor requirements.adoc -o index.html
-          asciidoctor-pdf requirements.adoc -o specifications.pdf
+          asciidoctor --failure-level WARN requirements.adoc -o index.html
+          asciidoctor-pdf --failure-level WARN requirements.adoc -o specifications.pdf
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
