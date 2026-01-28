@@ -14,3 +14,10 @@ The overall objectives of the system are to ensure a professional digital storef
 
 //---- Requirement [[g1-student_promotion]] ^G.1.{counter:g1}^ The system shall provide a dedicated space for showcasing student projects and academic paths to help industrial and academic partners identify potential candidates. //----
 
+//---- Requirement [[g1-dynamic_management]] ^G.1.{counter:g1}^ The system shall allow an authenticated user (Administrator) to add, modify, or delete activities and events autonomously through a dedicated management interface. //----
+
+//---- Requirement [[g1-responsive_accessibility]] ^G.1.{counter:g1}^ The system shall be designed to provide a smooth and consistent user experience across all devices (desktops, tablets, and smartphones) using a responsive design approach. //----
+
+//---- Requirement [[g1-contact_interactivity]] ^G.1.{counter:g1}^ The system shall enable visitors to communicate with the association’s board via a structured contact form, ensuring the transmission of essential data (name, email, message). //----
+
+//---- Requirement [[g1-technical_reliability]] ^G.1.{counter:g1}^ The system shall be developed using modern technologies (React/TypeScript for the Front-end, Firebase for the Back-end) to ensure long-term maintainability and scalability. //----
