@@ -1,0 +1,15 @@
+[[G4]]
+
+=== G.4 Functionality overview
+
+NOTE: Overview of the functions (behavior) of the system. Principal properties only (details are in the System book) (see {Handbook}).
+
+These core functionalities represent the high-level behaviors expected from the web platform. They cover both the public-facing features available to all visitors (students, recruiters) and the restricted management features reserved for the association administrators.
+
+//---- Functionality [[g4-public_content_display]] ^G.4.{counter:g4}^ The system shall display structured information regarding the association's missions, board members, and academic programs (Licence/Master) to all unauthenticated visitors. //----
+
+//---- Functionality [[g4-project_showcase]] ^G.4.{counter:g4}^ The system shall present a dedicated catalog of student projects, allowing external visitors (recruiters/partners) to view descriptions, technologies used, and visual assets of student work. //----
+
+//---- Functionality [[g4-content_management]] ^G.4.{counter:g4}^ The system shall provide a secured Back-Office interface allowing authenticated administrators to create, update, and delete events and activities dynamically. //----
+
+//---- Functionality [[g4-admin_authentication]] ^G.4.{counter:g4}^ The system shall securely authenticate board members using credentials (via Firebase Auth) before granting access to administrative functionalities. //----
