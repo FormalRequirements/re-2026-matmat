@@ -1,0 +1,18 @@
+[[G7]]
+
+=== G.7 Stakeholders and requirements sources
+
+NOTE: Groups of people who can affect the project or be affected by it, and other places to consider for information about the project and system (see {Handbook}).
+
+WARNING: This chapter should not be empty (following the Minimum Requirements Outcome Principle, p.27 of the {handbook}).
+
+This chapter identifies the categories of stakeholders whose input, influence, or approval is relevant to the Association 404 Website project. It also lists non-human sources of information such as documentation, legal standards, and branding guidelines that contribute to the requirements.
+
+==== Non-human requirements sources
+
+The following sources have also been used or should be considered when formulating requirements:
+
+//---- Source ^G.7.{counter:g7}^ Competitor Benchmarking: Analysis of websites from other student associations (BDE, other universities) to identify best practices. //----
+
+
+These sources will continue to guide the refinement of the requirements and must be kept available throughout the project lifecycle.
