@@ -1,9 +1,17 @@
 === P.2 Imposed Technical Choices
 
-The following technologies are imposed to respect cost and maintenance constraints:
+[[P2-1]]
+^P.2.{counter:p2}^ **Programming Language**::
+The project must use **TypeScript** to ensure type safety and code robustness, facilitating future maintenance by other students.
 
-* **Language:** TypeScript (for type safety and robustness).
-* **UI Framework:** React (Industry standard, key skill for the Master's degree).
-* **Back-end (BaaS):** Google Firebase (Free Authentication and NoSQL Database).
-* **Hosting:** Vercel (Automated Continuous Deployment).
-* **Version Control:** GitHub.
+[[P2-2]]
+^P.2.{counter:p2}^ **User Interface Framework**::
+The Front-end must be built with **React** (v18+), as it is the industry standard taught in the Master's program and required for the team's skill development.
+
+[[P2-3]]
+^P.2.{counter:p2}^ **Backend Services**::
+The project must use **Google Firebase** (Authentication & Firestore) to provide a backend without managing a dedicated server (Serverless architecture).
+
+[[P2-4]]
+^P.2.{counter:p2}^ **Hosting & Deployment**::
+The application must be hosted on **Vercel** to benefit from its free tier and automated Git integration.

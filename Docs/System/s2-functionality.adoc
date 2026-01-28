@@ -2,49 +2,43 @@
 
 NOTE: Detailed functional requirements classified by the MoSCoW method.
 
-==== S.2.1 Public Module (Showcase)
+==== S.2.1 Public Module (Visitor Features)
 
-[[REQ-F-01]]
-**REQ-F-01: Landing Page**::
-The system must display a concise overview of Association 404, including the official logo and the slogan "Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales".
-* _Priority:_ MUST
+[[S2-1]]
+^S.2.{counter:s2}^ **Landing Page**::
+[cite_start]The system **MUST** display a landing page presenting the Association 404, its logo, and its core mission ("Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales")[cite: 43, 74].
 
-[[REQ-F-02]]
-**REQ-F-02: Event Agenda**::
-The system must list events as cards, sorted by date (from nearest to furthest). Each card displays the date, title, and a short summary.
-* _Priority:_ MUST
+[[S2-2]]
+^S.2.{counter:s2}^ **Event Agenda**::
+The system **MUST** list past and upcoming events in chronological order. [cite_start]Each event card must display a title, date, and short description[cite: 53, 77].
 
-[[REQ-F-03]]
-**REQ-F-03: Contact Form**::
-The system must provide a form allowing any visitor to send an email to the association (via email redirection or API).
-* _Priority:_ MUST
+[[S2-3]]
+^S.2.{counter:s2}^ **Contact Form**::
+The system **MUST** provide a form allowing visitors to send a message to the board. [cite_start]Required fields are: Name, Email, and Message[cite: 61, 79].
 
-[[REQ-F-04]]
-**REQ-F-04: Team Directory ("Trombinoscope")**::
-The system should display the list of current board members with their roles and photos.
-* _Priority:_ SHOULD
+[[S2-4]]
+^S.2.{counter:s2}^ **Team Directory (Trombinoscope)**::
+[cite_start]The system **SHOULD** display the list of current board members, including their full names, roles (e.g., President, Treasurer), and photos[cite: 50, 75].
 
-[[REQ-F-05]]
-**REQ-F-05: Dark Mode**::
-The system could allow the user to toggle the display between light and dark modes for visual comfort.
-* _Priority:_ COULD
+[[S2-5]]
+^S.2.{counter:s2}^ **Projects Showcase**::
+[cite_start]The system **SHOULD** include a section to showcase student projects to attract external partners and recruiters[cite: 62, 78].
 
-[[REQ-F-08]]
-**REQ-F-08: Student Projects Showcase**::
-The system should include a section dedicated to showcasing projects realized by students to attract recruiters.
-* _Priority:_ SHOULD
+[[S2-6]]
+^S.2.{counter:s2}^ **Dark Mode**::
+The system **COULD** allow users to toggle between a light theme and a dark theme for visual comfort (implemented via Tailwind CSS).
 
 ==== S.2.2 Administration Module (Back-Office)
 
-[[REQ-F-06]]
-**REQ-F-06: Admin Authentication**::
-The system must restrict access to administration pages. Only users authenticated and authorized via Firebase Auth can access them.
-* _Priority:_ MUST
+[[S2-7]]
+^S.2.{counter:s2}^ **Admin Authentication**::
+The system **MUST** restrict access to the administration panel. [cite_start]Only users authenticated via Firebase Auth with a whitelisted email address can access it[cite: 187].
 
-[[REQ-F-07]]
-**REQ-F-07: Activity Management (CRUD)**::
-The administrator must be able to:
-* **Create** a new event (Title, Date, Description, Image).
-* **Update** an existing event.
-* **Delete** a past or cancelled event.
-* _Priority:_ MUST
+[[S2-8]]
+^S.2.{counter:s2}^ **Event Management (CRUD)**::
+The system **MUST** allow an authenticated administrator to:
+* **Create** a new event.
+* **Read** the list of all events.
+* **Update** an existing event's details.
+* **Delete** an event.
+[cite_start]This must be done via a GUI without modifying the source code [cite: 27, 64-67].

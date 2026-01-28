@@ -1,19 +1,17 @@
 === P.7 Requirements Process and Report
 
-The definition of requirements followed an iterative process based on the **PEGS** methodology:
+[[P7-1]]
+^P.7.{counter:p7}^ **Elicitation Process**::
+Requirements were gathered through interviews with the current Association Board and analysis of existing communication channels (Instagram, Discord).
 
-1.  **Elicitation (Gathering):**
-* Interviews with the association board (Mathis Dugue) to identify current gaps (see G.1).
-* Analysis of existing channels (Instagram page, Discord).
+[[P7-2]]
+^P.7.{counter:p7}^ **Structuring Standard**::
+The requirements are structured according to the **PEGS** methodology (Project, Environment, Goals, System) as defined in the course.
 
-2.  **Structuring:**
-* Drafting requirements according to the 4 Books formalism (Project, Environment, Goals, System).
-* Classification of constraints (Business vs. Engineering) in the Environment book.
+[[P7-3]]
+^P.7.{counter:p7}^ **Validation Method**::
+Each functional requirement is prioritized using the **MoSCoW** method (Must, Should, Could, Won't) and validated by the Product Owner before implementation.
 
-3.  **Validation & Prioritization:**
-* Use of the **MoSCoW** method (Must, Should, Could, Won't) to prioritize developments (see S.2 and S.5).
-* Each "Must" requirement was validated by the Product Owner before development.
-
-4.  **Traceability:**
-* Each functional requirement has a unique identifier (e.g., `REQ-F-01`).
-* These identifiers are referenced in Git commits and GitHub Issues to ensure the link between the need and the code.
+[[P7-4]]
+^P.7.{counter:p7}^ **Traceability**::
+Development tasks (GitHub Issues) and Code Commits must reference the unique Requirement ID (e.g., `Ref: S.2.1`) to ensure full traceability.

@@ -1,8 +1,17 @@
 === P.4 Tasks and Deliverables
 
-The expected deliverables at the end of the project are:
+[[P4-1]]
+^P.4.{counter:p4}^ **Source Code Repository**::
+The complete source code must be hosted on a public GitHub repository (`asso-404-miashs`) with clear commit history.
 
-1.  **Source Code:** Hosted on the GitHub repository `asso-404-miashs`.
-2.  **Deployed Application:** Publicly accessible via the URL `https://asso-404-miashs.vercel.app/`.
-3.  **Requirements Documentation:** This document (generated in HTML/PDF via CI/CD).
-4.  **Installation Manual:** README.md at the root of the project.
+[[P4-2]]
+^P.4.{counter:p4}^ **Deployed Application**::
+The application must be accessible publicly via a stable URL (e.g., `https://asso-404-miashs.vercel.app/`).
+
+[[P4-3]]
+^P.4.{counter:p4}^ **Requirements Specification**::
+A generated HTML/PDF document (this PEGS document) must be provided, detailing all functional and non-functional requirements.
+
+[[P4-4]]
+^P.4.{counter:p4}^ **Installation Manual**::
+A `README.md` file must be present at the root of the repository, explaining how to install dependencies and run the project locally.

@@ -1,18 +1,16 @@
 === P.6 Risk and Mitigation Analysis
 
-[cols="1,2,2", options="header"]
-|===
-| Risk | Impact | Mitigation (Solution)
+[[P6-1]]
+^P.6.{counter:p6}^ **Risk: Knowledge Loss**::
+* *Impact:* High. The student board changes every year; the site could become unmaintainable.
+* *Mitigation:* We enforce strict code documentation and use standard technologies (React) widely known by students.
 
-| **Knowledge Loss**
-| High. The association board changes every year; the site risks becoming unmaintainable.
-| Exhaustive technical documentation and commented code. Choice of standard technologies (React).
+[[P6-2]]
+^P.6.{counter:p6}^ **Risk: Third-Party dependency costs**::
+* *Impact:* Medium. Firebase or Vercel could change their free tier policies.
+* *Mitigation:* The architecture is modular; the database service can be migrated if necessary. We also set up quota alerts.
 
-| **Third-Party Dependency**
-| Medium. Firebase or Vercel change their free tier plans.
-| Modular architecture allowing a switch of backend providers if necessary. Quota monitoring.
-
-| **Development Delays**
-| High. Significant academic workload in parallel.
-| Strict prioritization via the MoSCoW method (functionalities marked as "MUST" are priority).
-|===
+[[P6-3]]
+^P.6.{counter:p6}^ **Risk: Academic Workload Overload**::
+* *Impact:* High. Delays in development due to other exams.
+* *Mitigation:* Strict application of the MoSCoW prioritization method. Only "MUST" features are guaranteed for the deadline.

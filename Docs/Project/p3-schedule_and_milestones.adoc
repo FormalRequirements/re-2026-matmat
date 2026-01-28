@@ -1,8 +1,17 @@
 === P.3 Schedule and Milestones
 
-The project runs from September to January.
+[[P3-1]]
+^P.3.{counter:p3}^ **Milestone 1: Analysis (End of September)**::
+Validation of the PEGS requirements documentation and UI mockups (Figma).
 
-* **Milestone 1 (End of Sept):** Needs analysis and specifications drafting (PEGS).
-* **Milestone 2 (Mid-Oct):** "MVP" (Minimum Viable Product) delivery: Static website with Landing Page and Contact form.
-* **Milestone 3 (End of Nov):** Dynamic Integration: Connection to Firebase and display of real events.
-* **Milestone 4 (January):** Final Release: Functional Administration Interface and complete documentation.
+[[P3-2]]
+^P.3.{counter:p3}^ **Milestone 2: MVP Delivery (Mid-October)**::
+Deployment of a static version of the website including the Landing Page and Contact Form.
+
+[[P3-3]]
+^P.3.{counter:p3}^ **Milestone 3: Dynamic Integration (End of November)**::
+Integration of Firebase Authentication and dynamic display of events from the database.
+
+[[P3-4]]
+^P.3.{counter:p3}^ **Milestone 4: Final Release (January)**::
+Delivery of the fully functional Administration Interface, final testing, and handover of documentation.

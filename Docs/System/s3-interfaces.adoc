@@ -1,8 +1,18 @@
 === S.3 Interfaces
 
-* **GUI (Graphical User Interface):**
-** Responsive Design (Mobile First) ensuring compatibility with standard viewports (Mobile, Tablet, Desktop).
-** Compliance with the association's visual identity (Color palette, Typography).
+NOTE: How the system makes functionality available to users and other systems.
 
-* **API Interfaces:**
-** Communication with Firebase services is handled exclusively via the official **Firebase Web SDK**.
+[[S3-1]]
+^S.3.{counter:s3}^ **Responsive User Interface (UI)**::
+The Web Client must implement a **Responsive Design** strategy. The layout must adapt automatically to:
+* Desktop screens (Wide).
+* Tablets.
+* [cite_start]Mobile devices (Vertical layout)[cite: 37, 188].
+
+[[S3-2]]
+^S.3.{counter:s3}^ **Firebase Data Interface (API)**::
+The application connects to the database exclusively using the **Firebase Web SDK**. No public REST API endpoints are exposed to third parties in this version.
+
+[[S3-3]]
+^S.3.{counter:s3}^ **Visual Identity**::
+[cite_start]The interface must strictly follow the Association 404 color palette (Dark Blue/White) and typography as defined in the Figma mockups[cite: 104].
