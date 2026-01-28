@@ -11,36 +11,62 @@
 // ------------------------------------------
 // 1. PROJECT (P)
 // ------------------------------------------
+
 include::Docs/Project/header.adoc[]
+
 include::Docs/Project/p1-roles_and_personnel.adoc[]
+
+include::Docs/Project/p2-imposed_technical_choices.adoc[]
+
 include::Docs/Project/p3-schedule_and_milestones.adoc[]
+
 include::Docs/Project/p4-tasks_and_deliverables.adoc[]
+
 include::Docs/Project/p5-required_technology_elements.adoc[]
+
 include::Docs/Project/p6-risk_and_mitigation_analysis.adoc[]
+
 include::Docs/Project/p7-requirements_process_and_report.adoc[]
 
 // ------------------------------------------
 // 2. ENVIRONMENT (E)
 // ------------------------------------------
 include::Docs/Environment/header.adoc[]
+
 include::Docs/Environment/e1-glossary.adoc[]
+
 include::Docs/Environment/e2-components.adoc[]
+
 include::Docs/Environment/e3-constraints.adoc[]
+
 include::Docs/Environment/e4-assumptions.adoc[]
 
 // ------------------------------------------
 // 3. GOALS (G)
 // ------------------------------------------
 include::Docs/Goals/header.adoc[]
+
 include::Docs/Goals/g1-context_and_overall_objectives.adoc[]
+
 include::Docs/Goals/g2-current_situation.adoc[]
+
 include::Docs/Goals/g3-expected_benefits.adoc[]
+
+include::Docs/Goals/g4-functionality_overview.adoc[]
+
+include::Docs/Goals/g5-high_level_usage_scenarios.adoc[]
+
+include::Docs/Goals/g6-limitations_and_exclusions.adoc[]
+
 include::Docs/Goals/g7-stakeholders_and_sources.adoc[]
 
 // ------------------------------------------
 // 4. SYSTEM (S)
 // ------------------------------------------
 include::Docs/System/header.adoc[]
+
 include::Docs/System/s1-components.adoc[]
+
 include::Docs/System/s2-functionality.adoc[]
+
 include::Docs/System/s3-interfaces.adoc[]
