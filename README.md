@@ -2,7 +2,7 @@
 
 Welcome to the repository for the functional requirements of the official Association 404 website
 
-[requirement file](https://formalrequirements.github.io/re-2026-matmat/)
+[requirement LINK](https://formalrequirements.github.io/re-2026-matmat/)
 
 ## 👥 The Team
 
