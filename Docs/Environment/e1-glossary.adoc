@@ -1,0 +1,21 @@
+[[E1]]
+
+=== E.1 Glossary
+
+NOTE: Clear and precise definitions of all the vocabulary specific to the application domain, including technical terms, words from ordinary language used in a special meaning, and acronyms (see {Handbook}).
+
+WARNING: This chapter should not be empty (following the Glossary Principle, p.27 of the {handbook}).
+
+//---- Term [[e1-miashs]] ^E.1.{counter:e1}^ MIASHS:: Mathematics and Computer Science Applied to Human and Social Sciences. The specific university degree program represented by the Association 404. //----
+
+//---- Term [[e1-front_office]] ^E.1.{counter:e1}^ Front-Office:: The public-facing part of the website accessible to all visitors (students, partners, recruiters) without requiring authentication. //----
+
+//---- Term [[e1-back_office]] ^E.1.{counter:e1}^ Back-Office:: The restricted administration interface accessible only to authenticated Board Members for managing content (events, projects, members). //----
+
+//---- Term [[e1-crud]] ^E.1.{counter:e1}^ CRUD:: Create, Read, Update, Delete. An acronym referring to the four basic operations that the system can perform on data (e.g., managing a news post). //----
+
+//---- Term [[e1-firebase]] ^E.1.{counter:e1}^ Firebase:: A backend-as-a-service platform by Google used in this project for authentication and real-time database management. //----
+
+//---- Term [[e1-board_member]] ^E.1.{counter:e1}^ Board Member:: An elected student holding an official role within the Association 404 (e.g., President, Treasurer, VP Com), possessing administrative rights on the system. //----
+
+//---- Term [[e1-evergreen_browser]] ^E.1.{counter:e1}^ Evergreen Browser:: A web browser that automatically updates itself to the latest version (e.g., Chrome, Firefox, Edge), ensuring support for modern web standards. //----

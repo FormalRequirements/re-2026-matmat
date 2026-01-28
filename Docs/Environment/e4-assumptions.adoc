@@ -1,0 +1,11 @@
+[[E4]]
+
+=== E.4 Assumptions
+
+NOTE: Properties of the environment that may be assumed, with the goal of facilitating the project and simplifying the system (see {Handbook}).
+
+//---- Assumption [[e4-stable_connectivity]] ^E.4.{counter:e4}^ It is assumed that users possess a stable internet connection when accessing the site. The system does not cache extensive data for offline usage in this version. //----
+
+//---- Assumption [[e4-content_availability]] ^E.4.{counter:e4}^ It is assumed that the Association Board will provide all necessary editorial content (texts, images, logos) and legal notices in a timely manner to populate the website before launch. //----
+
+//---- Assumption [[e4-service_stability]] ^E.4.{counter:e4}^ It is assumed that the third-party platforms (Vercel, Firebase) will maintain their current free-tier quotas and API availability throughout the development lifecycle without breaking changes. //----
