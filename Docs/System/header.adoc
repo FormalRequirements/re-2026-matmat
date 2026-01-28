@@ -1,0 +1,7 @@
+// Header for the System Book
+== System
+
+[NOTE]
+====
+The System book refines the Goals by focusing on detailed requirements about the system under development: its constituents, behaviors, and properties.
+====
