@@ -15,7 +15,9 @@ include::Docs/Project/header.adoc[]
 include::Docs/Project/p1-roles_and_personnel.adoc[]
 include::Docs/Project/p3-schedule_and_milestones.adoc[]
 include::Docs/Project/p4-tasks_and_deliverables.adoc[]
+include::Docs/Project/p5-required_technology_elements.adoc[]
 include::Docs/Project/p6-risk_and_mitigation_analysis.adoc[]
+include::Docs/Project/p7-requirements_process_and_report.adoc[]
 
 // ------------------------------------------
 // 2. ENVIRONMENT (E)

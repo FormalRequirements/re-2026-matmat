@@ -1,0 +1,18 @@
+=== P.6 Risk and Mitigation Analysis
+
+[cols="1,2,2", options="header"]
+|===
+| Risk | Impact | Mitigation (Solution)
+
+| **Knowledge Loss**
+| High. The association board changes every year; the site risks becoming unmaintainable.
+| Exhaustive technical documentation and commented code. Choice of standard technologies (React).
+
+| **Third-Party Dependency**
+| Medium. Firebase or Vercel change their free tier plans.
+| Modular architecture allowing a switch of backend providers if necessary. Quota monitoring.
+
+| **Development Delays**
+| High. Significant academic workload in parallel.
+| Strict prioritization via the MoSCoW method (functionalities marked as "MUST" are priority).
+|===

@@ -1,0 +1,9 @@
+=== P.2 Imposed Technical Choices
+
+The following technologies are imposed to respect cost and maintenance constraints:
+
+* **Language:** TypeScript (for type safety and robustness).
+* **UI Framework:** React (Industry standard, key skill for the Master's degree).
+* **Back-end (BaaS):** Google Firebase (Free Authentication and NoSQL Database).
+* **Hosting:** Vercel (Automated Continuous Deployment).
+* **Version Control:** GitHub.

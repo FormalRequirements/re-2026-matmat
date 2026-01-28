@@ -1,0 +1,8 @@
+=== P.3 Schedule and Milestones
+
+The project runs from September to January.
+
+* **Milestone 1 (End of Sept):** Needs analysis and specifications drafting (PEGS).
+* **Milestone 2 (Mid-Oct):** "MVP" (Minimum Viable Product) delivery: Static website with Landing Page and Contact form.
+* **Milestone 3 (End of Nov):** Dynamic Integration: Connection to Firebase and display of real events.
+* **Milestone 4 (January):** Final Release: Functional Administration Interface and complete documentation.
