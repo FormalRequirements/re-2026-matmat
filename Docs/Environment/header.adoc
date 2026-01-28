@@ -3,7 +3,7 @@
 //
 // Template for requirement:
 //[[ex-keyword]] 
-//{counter:environment}
+//`{counter:environment}`
 // Requirement
 
 // {missing} [Corresponding Artifact]
