@@ -1,0 +1,11 @@
+=== P.1 Roles and Personnel
+
+The project is carried out by a team of two students from the Master 2 MIASHS ICE-LD:
+
+* **Mathis DUGUE**:
+** *Role:* Product Owner (Client) & Fullstack Developer.
+** *Responsibilities:* Defines business needs (as a member of the Association 404 board), validates features, and develops the Front-end.
+
+* **Matthias LABIT**:
+** *Role:* Scrum Master & Lead Developer / QA.
+** *Responsibilities:* Ensures PEGS methodology compliance, Quality Assurance (CI/CD), technical architecture, and testing.

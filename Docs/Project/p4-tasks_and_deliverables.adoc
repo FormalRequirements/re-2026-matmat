@@ -1,0 +1,8 @@
+=== P.4 Tasks and Deliverables
+
+The expected deliverables at the end of the project are:
+
+1.  **Source Code:** Hosted on the GitHub repository `asso-404-miashs`.
+2.  **Deployed Application:** Publicly accessible via the URL `https://asso-404-miashs.vercel.app/`.
+3.  **Requirements Documentation:** This document (generated in HTML/PDF via CI/CD).
+4.  **Installation Manual:** README.md at the root of the project.

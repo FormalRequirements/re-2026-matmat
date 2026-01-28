@@ -1,0 +1,19 @@
+=== P.7 Requirements Process and Report
+
+The definition of requirements followed an iterative process based on the **PEGS** methodology:
+
+1.  **Elicitation (Gathering):**
+* Interviews with the association board (Mathis Dugue) to identify current gaps (see G.1).
+* Analysis of existing channels (Instagram page, Discord).
+
+2.  **Structuring:**
+* Drafting requirements according to the 4 Books formalism (Project, Environment, Goals, System).
+* Classification of constraints (Business vs. Engineering) in the Environment book.
+
+3.  **Validation & Prioritization:**
+* Use of the **MoSCoW** method (Must, Should, Could, Won't) to prioritize developments (see S.2 and S.5).
+* Each "Must" requirement was validated by the Product Owner before development.
+
+4.  **Traceability:**
+* Each functional requirement has a unique identifier (e.g., `REQ-F-01`).
+* These identifiers are referenced in Git commits and GitHub Issues to ensure the link between the need and the code.

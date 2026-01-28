@@ -1,0 +1,7 @@
+// Header for the Project Book
+== Project
+
+[NOTE]
+====
+This book describes the project organization, imposed technical choices, schedule, and the methodology used to develop the Association 404 website.
+====

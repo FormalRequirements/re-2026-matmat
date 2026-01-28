@@ -1,0 +1,15 @@
+=== P.5 Required Technology Elements
+
+To develop and deploy this project, the following elements are necessary:
+
+* **Development Environment:**
+** Node.js (v18 or higher) and npm/yarn for package management.
+** An IDE supporting TypeScript (e.g., VS Code).
+** Git for versioning.
+
+* **External Services (Cloud):**
+** An active **Google Firebase** project (for Auth and Firestore).
+** A **Vercel** account linked to the GitHub repository for continuous deployment.
+
+* **User Hardware:**
+** The site does not require specific hardware on the client side; a modern web browser (Chrome, Firefox, Safari) is sufficient.
