@@ -1,0 +1,50 @@
+=== S.2 Functionality
+
+NOTE: Detailed functional requirements classified by the MoSCoW method.
+
+==== S.2.1 Public Module (Showcase)
+
+[[REQ-F-01]]
+**REQ-F-01: Landing Page**::
+The system must display a concise overview of Association 404, including the official logo and the slogan "Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales".
+* _Priority:_ MUST
+
+[[REQ-F-02]]
+**REQ-F-02: Event Agenda**::
+The system must list events as cards, sorted by date (from nearest to furthest). Each card displays the date, title, and a short summary.
+* _Priority:_ MUST
+
+[[REQ-F-03]]
+**REQ-F-03: Contact Form**::
+The system must provide a form allowing any visitor to send an email to the association (via email redirection or API).
+* _Priority:_ MUST
+
+[[REQ-F-04]]
+**REQ-F-04: Team Directory ("Trombinoscope")**::
+The system should display the list of current board members with their roles and photos.
+* _Priority:_ SHOULD
+
+[[REQ-F-05]]
+**REQ-F-05: Dark Mode**::
+The system could allow the user to toggle the display between light and dark modes for visual comfort.
+* _Priority:_ COULD
+
+[[REQ-F-08]]
+**REQ-F-08: Student Projects Showcase**::
+The system should include a section dedicated to showcasing projects realized by students to attract recruiters.
+* _Priority:_ SHOULD
+
+==== S.2.2 Administration Module (Back-Office)
+
+[[REQ-F-06]]
+**REQ-F-06: Admin Authentication**::
+The system must restrict access to administration pages. Only users authenticated and authorized via Firebase Auth can access them.
+* _Priority:_ MUST
+
+[[REQ-F-07]]
+**REQ-F-07: Activity Management (CRUD)**::
+The administrator must be able to:
+* **Create** a new event (Title, Date, Description, Image).
+* **Update** an existing event.
+* **Delete** a past or cancelled event.
+* _Priority:_ MUST
