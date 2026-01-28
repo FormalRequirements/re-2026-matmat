@@ -11,3 +11,6 @@ The 404 Association brings together students in the Mathematics and Computer Sci
 The overall objectives of the system are to ensure a professional digital storefront, facilitate connections between students and recruiters, and allow for simplified content administration (activities and events) without requiring direct modifications to the source code.
 
 //---- Requirement [[g1-showcase_visibility]] ^G.1.{counter:g1}^ The system shall provide a public presentation of the 404 Association’s missions, values, and organization to increase its institutional visibility. //----
+
+//---- Requirement [[g1-student_promotion]] ^G.1.{counter:g1}^ The system shall provide a dedicated space for showcasing student projects and academic paths to help industrial and academic partners identify potential candidates. //----
+
