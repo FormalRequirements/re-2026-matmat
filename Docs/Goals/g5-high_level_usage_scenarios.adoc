@@ -13,3 +13,4 @@ A new student (L1) wants to get involved in student life but does not know upcom
 
 The student accesses the public homepage and navigates to the "Events" section. They view a chronological list of upcoming workshops and parties. They click on a specific event to read the full description and find the location. The student is now informed and can attend without needing to ask for details via private messaging. //----
 
+
