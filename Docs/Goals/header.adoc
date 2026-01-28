@@ -1,0 +1,19 @@
+//------------------------------------
+// GOALS book
+//
+// Template for requirement:
+//---- Requirement
+//[[gx-keyword]] 
+//{counter:gx}
+// Requirement
+
+// {missing} [Corresponding Artifact]
+//---- 
+//------------------------------------
+
+== Goals
+
+[NOTE]
+====
+Goals are "needs of the target organization, which the system will address". 
+====
