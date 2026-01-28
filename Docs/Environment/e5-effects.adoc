@@ -1,0 +1,11 @@
+=== E.5 Effects
+
+NOTE: Description of how the system affects the environment.
+
+Given the nature of the project (**Purely Informational Software**), the system does not directly actuate physical components or alter the physical environment.
+
+The only "effects" produced by the system are:
+* The update of information in the Firebase database.
+* The visual display of information on user screens.
+
+These information changes are already covered in the **Goals (G)** and **System (S)** books. Therefore, no specific environmental effects are listed in this chapter.

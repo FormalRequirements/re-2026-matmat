@@ -41,6 +41,10 @@ include::Docs/Environment/e3-constraints.adoc[]
 
 include::Docs/Environment/e4-assumptions.adoc[]
 
+include::Docs/Environment/e5-effects.adoc[]
+
+include::Docs/Environment/e6-invariants.adoc[]
+
 // ------------------------------------------
 // 3. GOALS (G)
 // ------------------------------------------

@@ -1,0 +1,7 @@
+=== E.6 Invariants
+
+NOTE: Properties of the environment that are always true, regardless of the system's behavior.
+
+For this web application project, the environmental invariants (such as "A user cannot be in two places at once" or "Time moves forward") are considered trivial or implied.
+
+Specific constraints regarding the validity of data are treated as **Business Rules** in section **E.3 Constraints** or as **Assumptions** in section **E.4**. Consequently, this section acts as a placeholder to satisfy the PEGS structure but contains no additional specific invariants.
