@@ -36,6 +36,7 @@ jobs:
 
       - name: Convert Adoc to HTML & PDF
         run: |
+          # --failure-level WARN : La CI plante si un fichier include est manquant ou si la syntaxe est mauvaise
           asciidoctor requirements.adoc -o index.html
           asciidoctor-pdf requirements.adoc -o specifications.pdf
 
