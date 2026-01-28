@@ -1,19 +1,15 @@
-[[G3]]
-
 === G.3 Expected Benefits
 
-NOTE: New processes, or improvements to existing processes, made possible by the project’s results (see {Handbook}).
+The 404 Association website project is expected to deliver strategic benefits that justify the investment.
 
-WARNING: This chapter should not be empty (following the Minimum Requirements Outcome Principle, p.27 of the {handbook}).
+[[G3-1]]
+^G.3.{counter:g3}^ **Permanent Visibility**::
+The system shall mitigate the association's lack of digital presence by providing an official and permanent online platform accessible 24/7.
 
-The 404 Association website project is expected to deliver a set of strategic benefits that directly support the visibility, cohesion, and operational efficiency of the student community. These benefits justify the investment and provide a clear rationale for the system’s development and deployment.
+[[G3-2]]
+^G.3.{counter:g3}^ **Member Professionalization**::
+The system shall contribute to the professionalization of its members by providing a structured showcase for their technical projects.
 
-By clearly identifying and documenting these expected benefits, the project maintains alignment with its original goals, especially as priorities shift or project direction is challenged. The benefits also serve to constrain the scope and protect against unnecessary additions ("creeping featurism") that may dilute its focus.
-
-The website enhances organizational resilience through improved communication, talent promotion, and streamlined activity management.
-
-//---- Benefit [[g3-permanent_visibility]] ^G.3.{counter:g3}^ The system shall mitigate the association's lack of digital presence by providing an official and permanent online platform accessible 24/7 to partners, recruiters, and prospective students. //----
-
-//---- Benefit [[g3-member_professionalization]] ^G.3.{counter:g3}^ The system shall contribute to the professionalization of its members by providing a structured showcase for their technical projects, facilitating direct interaction with the corporate and industrial world. //----
-
-//---- Benefit [[g3-administrative_autonomy]] ^G.3.{counter:g3}^ The system shall streamline the board's daily operations by enabling administrators to manage and update content (activities, members, news) autonomously, without requiring external technical expertise. //----
+[[G3-3]]
+^G.3.{counter:g3}^ **Administrative Autonomy**::
+The system shall streamline the board's daily operations by enabling administrators to manage and update content without external technical expertise.

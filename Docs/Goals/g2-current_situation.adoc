@@ -1,39 +1,39 @@
-[[G2]]
-
 === G.2 Current Situation
 
-NOTE: Current state of processes to be addressed by the project and the resulting system (see {Handbook}).
+This chapter provides a structured overview of the current situation regarding digital communication. Each aspect is assessed on a scale from 1 (insufficient) to 5 (satisfactory).
 
-This chapter provides a structured overview of the current situation regarding the digital communication, member management, and external visibility of the 404 Association. Each relevant aspect is assessed on a scale from 1 to 5, where 1 indicates major insufficiency and 5 indicates full satisfaction. This analysis motivates the need for the new web platform.
+.Evaluation of current practices
+[cols="3,1,3",options="header"]
+|===
+| Category | Score | Comment
 
-==== Evaluation of current practices
+| **Official digital presence**
+| 1
+| The association has no centralized website; visibility relies solely on ephemeral social media posts.
 
-[cols="3,1,3",options="header"] |=== | Category | Score (1–5) | Comment
+| **Student project visibility**
+| 2
+| Academic projects are shared informally on private channels (Discord), remaining invisible to recruiters.
 
-| Official digital presence | 1 | The association has no centralized website; visibility relies solely on ephemeral social media posts. | Student project visibility | 2 | Academic projects are shared informally on private channels (Discord), remaining invisible to recruiters. | Event information access | 2 | Event details are often lost in messaging threads, leading to confusion among students. | Content update autonomy | 1 | Updating any public information currently requires technical intervention or manual reposting. | Institutional branding | 2 | The association lacks a consistent professional image for interacting with university partners. | Resource availability | 3 | Study materials and guides exist but are difficult for new members (L1) to locate and access. | Recruitment contact channel | 1 | No dedicated, professional channel exists for companies to contact the association regarding internships. |===
+| **Event information access**
+| 2
+| Event details are often lost in messaging threads, leading to confusion among students.
+
+| **Content update autonomy**
+| 1
+| Updating any public information currently requires technical intervention or manual reposting.
+|===
 
 ==== Summary of weaknesses
 
-Several limitations emerge from the evaluation above:
+[[G2-1]]
+^G.2.{counter:g2}^ **Credibility Gap**::
+The absence of an official website creates a credibility gap when approaching external partners, sponsors, and laboratories.
 
-//---- Weakness [[g2-credibility_gap]] ^G.2.1.{counter:g21}^ The absence of an official website creates a credibility gap when approaching external partners, sponsors, and laboratories. //----
+[[G2-2]]
+^G.2.{counter:g2}^ **Information Fragmentation**::
+The fragmentation of critical information across multiple social networks leads to lower student engagement and missed opportunities.
 
-//---- Weakness [[g2-information_fragmentation]] ^G.2.1.{counter:g21}^ The fragmentation of critical information across multiple social networks leads to lower student engagement and missed opportunities. //----
-
-//---- Weakness [[g2-hidden_talent]] ^G.2.1.{counter:g21}^ The lack of a public portfolio platform prevents the effective promotion of students' technical skills to potential employers. //----
-
-==== Example of To Be Done action:
-
-//---- TBD: To Be Determined [[g2-tbd-ui_ux_design]] .^G.2.2.{counter:g22}^ Finalize UI/UX Mockups for the platform [%collapsible]
-Author:: Design Team (Figma) Date:: 2026-01-28 Deadline:: 2026-02-10 Importance:: show-stopper Needs::
-
-[x] Defined color palette (Charte Graphique)
-
-[ ] Mobile responsive layout validation
-
-[ ] Board member approval ====
-
-//---- TBD: To Be Determined [[g2-tbd-backend_setup]] .^G.2.2.{counter:g22}^ Initialize Firebase project and database structure [%collapsible]
-Author:: Backend Team Date:: 2026-01-28 Deadline:: 2026-02-15 Importance:: show-stopper Rationale:: Essential for enabling the dynamic management of events without code modification.
-//---- TBD: To Be Determined [[g2-tbd-content_strategy]] .^G.2.2.{counter:g22}^ Gather initial content (photos, descriptions) for the launch [%collapsible]
-Author:: Communication Team Date:: 2026-01-28 Deadline:: 2026-02-20 Importance:: serious Rationale:: The site cannot launch with empty sections ("Lorem Ipsum"); real content is required for the "Members" and "Projects" pages.
+[[G2-3]]
+^G.2.{counter:g2}^ **Hidden Talent**::
+The lack of a public portfolio platform prevents the effective promotion of students' technical skills to potential employers.

@@ -1,33 +1,31 @@
-[[G6]]
-
 === G.6 Limitations and exclusions
 
-NOTE: Aspects that the system need not address (see {Handbook}).
-
-This chapter outlines the limitations and exclusions explicitly defined for the 404 Association Website project. These constraints are intended to delimit the scope of the system and to make clear what is not expected from its functionality or design. Stating these boundaries helps manage stakeholder expectations and focuses the project on its essential goals.
+This chapter outlines what is **not** expected from the system to manage stakeholder expectations.
 
 ==== Out-of-scope functionalities
 
-//---- OOO functionality ^G.6.1.{counter:g61}^ Real-time instant messaging or chat features between users (like Discord or WhatsApp) are not part of the system requirements. //----
+[[G6-1]]
+^G.6.{counter:g6}^ **No Real-time Chat**::
+Real-time instant messaging or chat features between users (like Discord) are excluded.
 
-//---- OOO functionality ^G.6.1.{counter:g61}^ The development of dedicated native mobile applications (iOS/Android) is excluded; the project focuses solely on a responsive web application. //----
+[[G6-2]]
+^G.6.{counter:g6}^ **No Mobile App**::
+The development of dedicated native mobile applications (iOS/Android) is excluded; the project is a responsive web app.
 
-//---- OOO functionality ^G.6.1.{counter:g61}^ User accounts for general visitors or students are not required; authentication is strictly limited to association administrators. //----
+[[G6-3]]
+^G.6.{counter:g6}^ **No User Accounts**::
+User accounts for general visitors are not required; authentication is strictly limited to administrators.
 
-//---- OOO functionality ^G.6.1.{counter:g61}^ Automated content translation (multi-language support) is not included in the initial release. //----
+==== Operational constraints
 
-==== Environmental and operational exclusions
+[[G6-4]]
+^G.6.{counter:g6}^ **Modern Browsers Only**::
+The system does not support legacy browsers (IE); it is optimized for Evergreen browsers (Chrome, Firefox, Safari).
 
-//---- Exclusion ^G.6.2.{counter:g62}^ The system does not support legacy web browsers (e.g., Internet Explorer); it is optimized for modern evergreen browsers (Chrome, Firefox, Safari, Edge). //----
+[[G6-5]]
+^G.6.{counter:g6}^ **Online Only**::
+The system does not provide "Offline Mode"; an active internet connection is required.
 
-//---- Exclusion ^G.6.2.{counter:g62}^ The system does not provide "Offline Mode" capabilities; an active internet connection is required to fetch dynamic content from the database. //----
-
-//---- Exclusion ^G.6.2.{counter:g62}^ The project does not include the migration of data from previous systems, as no legacy database exists. //----
-
-==== Organizational and technical constraints
-
-//---- Constraint ^G.6.3.{counter:g63}^ The developers are responsible for the technical structure, but the association board is solely responsible for writing and maintaining the editorial content (text, images). //----
-
-//---- Constraint ^G.6.3.{counter:g63}^ The system infrastructure relies on the free usage tiers of the hosting providers (Vercel, Firebase); high-traffic scaling requiring paid plans is not covered in the initial budget. //----
-
-//---- Constraint ^G.6.3.{counter:g63}^ GDPR compliance regarding user data (e.g., contact form entries) is the responsibility of the association's data controller, though the system implements standard security measures. //----
+[[G6-6]]
+^G.6.{counter:g6}^ **Budget Constraints**::
+The system infrastructure relies on free usage tiers (Vercel, Firebase); high-traffic scaling is not covered.

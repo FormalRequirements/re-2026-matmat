@@ -1,23 +1,24 @@
-[[G1]]
-
 === G.1 Context and overall objectives
 
-NOTE: High-level view of the project: organizational context (404 Association) and reason for building the system.
+The 404 Association brings together students in the Mathematics and Computer Science Applied to Human and Social Sciences (MIASHS) fields.
+The "404 Web Project" addresses the need for a centralized information hub to showcase student achievements and provide a dynamic management interface.
 
-WARNING: This chapter defines the core foundation for the MIASHS student association web platform.
+[[G1-1]]
+^G.1.{counter:g1}^ **Showcase Visibility**::
+The system shall provide a public presentation of the 404 Association’s missions, values, and organization to increase its institutional visibility.
 
-The 404 Association brings together students in the Mathematics and Computer Science Applied to Human and Social Sciences (MIASHS) fields, from Undergraduate to Master's levels. It was established with a vision to foster learning, innovation, and mutual aid through collaborative projects and events. Currently, the lack of an official web platform limits the visibility of members' skills and the promotion of activities to external partners. The "404 Web Project" addresses the need for a centralized information hub to showcase student achievements and provide a dynamic management interface for association life.
+[[G1-2]]
+^G.1.{counter:g1}^ **Student Promotion**::
+The system shall provide a dedicated space for showcasing student projects and academic paths to help industrial and academic partners identify potential candidates.
 
-The overall objectives of the system are to ensure a professional digital storefront, facilitate connections between students and recruiters, and allow for simplified content administration (activities and events) without requiring direct modifications to the source code.
+[[G1-3]]
+^G.1.{counter:g1}^ **Dynamic Management**::
+The system shall allow an authenticated user (Administrator) to add, modify, or delete activities and events autonomously through a dedicated management interface.
 
-//---- Requirement [[g1-showcase_visibility]] ^G.1.{counter:g1}^ The system shall provide a public presentation of the 404 Association’s missions, values, and organization to increase its institutional visibility. //----
+[[G1-4]]
+^G.1.{counter:g1}^ **Responsive Accessibility**::
+The system shall be designed to provide a smooth and consistent user experience across all devices (desktops, tablets, and smartphones) using a responsive design approach.
 
-//---- Requirement [[g1-student_promotion]] ^G.1.{counter:g1}^ The system shall provide a dedicated space for showcasing student projects and academic paths to help industrial and academic partners identify potential candidates. //----
-
-//---- Requirement [[g1-dynamic_management]] ^G.1.{counter:g1}^ The system shall allow an authenticated user (Administrator) to add, modify, or delete activities and events autonomously through a dedicated management interface. //----
-
-//---- Requirement [[g1-responsive_accessibility]] ^G.1.{counter:g1}^ The system shall be designed to provide a smooth and consistent user experience across all devices (desktops, tablets, and smartphones) using a responsive design approach. //----
-
-//---- Requirement [[g1-contact_interactivity]] ^G.1.{counter:g1}^ The system shall enable visitors to communicate with the association’s board via a structured contact form, ensuring the transmission of essential data (name, email, message). //----
-
-//---- Requirement [[g1-technical_reliability]] ^G.1.{counter:g1}^ The system shall be developed using modern technologies (React/TypeScript for the Front-end, Firebase for the Back-end) to ensure long-term maintainability and scalability. //----
+[[G1-5]]
+^G.1.{counter:g1}^ **Technical Reliability**::
+The system shall be developed using modern technologies (React/TypeScript, Firebase) to ensure long-term maintainability.

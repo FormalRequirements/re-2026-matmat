@@ -1,15 +1,19 @@
-[[E3]]
-
 === E.3 Constraints
 
-NOTE: Obligations and limits imposed on the project and system by the environment (see {Handbook}).
+NOTE: Obligations and limits imposed on the project by the environment.
 
-WARNING: This chapter should not be empty (following the Minimum Requirements Outcome Principle, p.27 of the {handbook}).
+[[E3-1]]
+^E.3.{counter:e3}^ **Zero Budget**::
+The system must operate entirely within the free usage tiers of the chosen service providers (Vercel, Firebase), as the association has no dedicated budget for IT infrastructure.
 
-//---- Constraint [[e3-zero_budget]] ^E.3.{counter:e3}^ The system must operate entirely within the free usage tiers of the chosen service providers (Vercel, Firebase), as the association has no dedicated budget for IT infrastructure. //----
+[[E3-2]]
+^E.3.{counter:e3}^ **GDPR Compliance**::
+The system must strictly adhere to GDPR (General Data Protection Regulation) regarding the collection, storage, and right-to-erasure of personal data (students' names, photos, emails).
 
-//---- Constraint [[e3-gdpr_compliance]] ^E.3.{counter:e3}^ The system must strictly adhere to GDPR (General Data Protection Regulation) regarding the collection, storage, and right-to-erasure of personal data (students' names, photos, emails). //----
+[[E3-3]]
+^E.3.{counter:e3}^ **Mobile Responsiveness**::
+The user interface must be fully responsive and functional on mobile devices (smartphones), as this constitutes the primary access method for the student target audience.
 
-//---- Constraint [[e3-mobile_responsiveness]] ^E.3.{counter:e3}^ The user interface must be fully responsive and functional on mobile devices (smartphones), as this constitutes the primary access method for the student target audience. //----
-
-//---- Constraint [[e3-academic_schedule]] ^E.3.{counter:e3}^ The development lifecycle is constrained by the academic calendar; the core system must be delivered and handed over before the end of the university semester (May/June). //----
+[[E3-4]]
+^E.3.{counter:e3}^ **Academic Schedule**::
+The development lifecycle is constrained by the academic calendar; the core system must be delivered and handed over before the end of the university semester (May/June).

@@ -1,13 +1,19 @@
-[[E2]]
-
 === E.2 Components
 
-NOTE: List of elements of the environment that may affect or be affected by the system and project. Includes other systems to which the system must be interfaced (see {Handbook}).
+NOTE: List of elements of the environment that may affect or be affected by the system.
 
-//---- Component [[e2-hosting_provider]] ^E.2.{counter:e2}^ Hosting Platform (Vercel) serves the application to the internet and manages the Continuous Deployment (CI/CD) pipeline from the code repository. //----
+[[E2-1]]
+^E.2.{counter:e2}^ **Hosting Platform (Vercel)**::
+Serves the application to the internet and manages the Continuous Deployment (CI/CD) pipeline directly from the code repository.
 
-//---- Component [[e2-backend_service]] ^E.2.{counter:e2}^ Firebase (BaaS) acts as the external backend service, handling user authentication and hosting the NoSQL database for dynamic content. //----
+[[E2-2]]
+^E.2.{counter:e2}^ **Firebase (BaaS)**::
+Acts as the external backend service, handling user authentication and hosting the NoSQL database for dynamic content.
 
-//---- Component [[e2-user_devices]] ^E.2.{counter:e2}^ User Devices (Smartphones, Laptops, Tablets) are the hardware terminals used by students and administrators to access the web platform. //----
+[[E2-3]]
+^E.2.{counter:e2}^ **User Devices**::
+Hardware terminals (Smartphones, Laptops, Tablets) used by students and administrators to access the web platform.
 
-//---- Component [[e2-web_browsers]] ^E.2.{counter:e2}^ Web Browsers (Chrome, Safari, Firefox) act as the client-side runtime environment that interprets the code and renders the interface to the user. //----
+[[E2-4]]
+^E.2.{counter:e2}^ **Web Browsers**::
+Client-side runtime environments (Chrome, Safari, Firefox) that interpret the code and render the interface to the user.
