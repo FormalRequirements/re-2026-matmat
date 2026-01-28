@@ -1,0 +1,8 @@
+=== S.3 Interfaces
+
+* **GUI (Graphical User Interface):**
+** Responsive Design (Mobile First) ensuring compatibility with standard viewports (Mobile, Tablet, Desktop).
+** Compliance with the association's visual identity (Color palette, Typography).
+
+* **API Interfaces:**
+** Communication with Firebase services is handled exclusively via the official **Firebase Web SDK**.

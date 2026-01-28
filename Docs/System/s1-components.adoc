@@ -1,0 +1,22 @@
+=== S.1 Components
+
+NOTE: Overall structure expressed by the list of major software parts.
+
+//---- Component
+^S.1.{counter:s1}^
+**Web Client (Front-end)**
+A Single Page Application (SPA) developed with React and TypeScript.
+It manages:
+* User Interface (UI) and responsive layout
+* Navigation between pages (Home, Events, Contact)
+* Interaction with Firebase services via the Web SDK
+//----
+
+//---- Component
+^S.1.{counter:s1}^
+**Backend Services (BaaS)**
+Managed by Google Firebase, comprising:
+* **Authentication:** Handles admin identity verification.
+* **Firestore:** NoSQL database storing events, members, and text content.
+* **Storage:** Hosts media files (event covers, team photos).
+//----
